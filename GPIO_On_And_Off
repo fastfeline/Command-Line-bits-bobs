@@ -1,0 +1,10 @@
+gpio mode 7 out
+
+//loops 100 times
+for n in $(seq 1 100)
+do
+  gpio write 7 0
+  sleep 2
+  gpio write 7 1
+  sleep 2
+done
